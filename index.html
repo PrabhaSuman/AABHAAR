@@ -1,0 +1,260 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Donation</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <div class="image">
+                    <img src="./img/logo.png" width="120" height="120" alt="">
+                </div>
+                
+            </div>
+            <!-- <div class="navItem">
+                <div class="quote">
+                    <input type="text" placeholder="Cause change starts with you" class="textinput">
+                </div> 
+            </div>       -->
+           <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div> 
+            <div class="navItem">
+                <span class="limitedOffer">Because change starts with you!</span>
+            </div>
+             
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">FOOD</h3>
+            <h3 class="menuItem">BOOKS</h3>
+            <h3 class="menuItem">SHOES</h3>
+            <h3 class="menuItem">CLOTHES</h3>
+            <h3 class="menuItem">TOYS</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/food.jpeg" alt="" class="sliderImg" >
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DONATE</br> FOOD</br> NOW</h1>
+                <h2 class="sliderPrice">₹100</h2>
+                <a href="#product">
+                    <button class="buyButton">DONATE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/books.jpeg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DONATE</br> BOOKS</br> NOW</h1>
+                <h2 class="sliderPrice">₹50</h2>
+                <a href="#product">
+                    <button class="buyButton">DONATE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/shoes.jpeg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DONATE</br>SHOES</br> NOW</h1>
+                <h2 class="sliderPrice">₹200</h2>
+                <a href="#product">
+                    <button class="buyButton">DONATE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/clothes.jpeg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DONATE</br> CLOTHES</br> NOW</h1>
+                <h2 class="sliderPrice">₹200</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/toys.jpeg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">DONATE</br> CLOTHES</br> NOW</h1>
+                <h2 class="sliderPrice">₹50</h2>
+                <a href="#product">
+                    <button class ="buyButton">DONATE NOW</button>
+               
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="./img/freeshipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free nationwide shipping on all orders to tackle poverty.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">SAFE PACKAGING</span>
+            <span class="featureDesc">No question of damage or loss and image shared after work.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/giftcard.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and donate on behalf of loved ones.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/aeroplane.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="./img/food.jpeg" alt class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">FOOD</h1>
+            <h2 class="productPrice">₹100</h2>
+            <p class="productDesc">Choose the quantity for the items you have selected.</p>
+            <div class="sizes">
+                <div class="size">5-10</div>
+                <div class="size">10-30</div>
+                <div class="size">>30</div>
+            </div>
+            <button class="productButton">DONATE NOW!</button>
+        </div>
+        <form name="personal" method="post"action="https://formspree.io/f/xldekejg">
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Full Name</label>
+            <input type="text" name="Name" placeholder="Name" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" name="Phone no" placeholder="+91 0000000000" class="payInput">
+            <label>Email Address</label>
+            <input type="text" name="email" placeholder="abc@gmail.com" class="payInput">
+            <label>Amount</label>
+            <input type="text" name="amount" placeholder="Rs 0.00" class="payInput">
+            <div class="scanner-container">
+                <div class="scanner-image" id="scanner">
+                    <!-- Display scanner image -->
+                    <img src="./img/QR.jpg" alt="Scanner" class="scannerimg" onerror="this.onerror=null; this.src='placeholder.jpg';">
+                </div>
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+</form>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Your one step forward can help us!</h1>
+            <img src="./img/poorgirl.jpg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="./img/poorman.jpg"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Give a helping hand to those who need it</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">It's not how much you give,it's about how much love you put into giving.!</h1>
+            <img src="./img/twoboysmiling.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="img/house.jpg"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">PLEASE JOIN US</h3>
+            <h1 class="nsTitle">This Season</h1>
+            <h1 class="nsTitle">For making a difference</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR PICK</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="img/bg.png"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/about%20us.html">About Us</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/about%20us.html">Contact</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/about%20us.html">Careers</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/about%20us.html">Affiliates</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/useful.html#books">Support</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/useful.html#books">FAQ</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/useful.html#books">Feedback</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/useful.html#books">Stories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem"> <a href="file:///D:/Mini%20project/index.html#nav">Toys</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/index.html#nav">Shoes</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/index.html#nav">Clothes</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/index.html#nav">Books</a>
+                    </li>
+                    <li class="fListItem"><a href="file:///D:/Mini%20project/index.html#nav">Food</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@AABHAAR. All rights reserved. 2024.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
