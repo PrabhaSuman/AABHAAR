@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Donation Platform</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2D2735;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.banner-images {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.banner-image {
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2D2735;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+ form label {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px;
+    background: #2D2735;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: black;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>PLEASE JOIN US</h1>
+        <h2>This Season</h2>
+        <h3>For Making a Difference</h3>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Our mission is to create a community where everyone can contribute to making the world a better place. 
+                We believe that every small act of kindness can make a significant impact. Our platform allows individuals 
+                to donate items such as toys, books, shoes, clothes, and food to those in need.
+            </p>
+            <p>
+                We partner with local charities and organizations to ensure that your donations reach the people who need 
+                them the most. Whether you have gently used items or surplus food, we are here to help you make a difference.
+            </p>
+            <p>
+                Join us in our mission to spread kindness and generosity. Together, we can create a brighter future for 
+                those in need.
+            </p>
+        </section>
+
+        <section id="donate">
+            <h2>How to Donate</h2>
+            <p>Donating is easy! Just follow these simple steps:</p>
+            <ol>
+                <li>Choose the items you want to donate.</li>
+                <li>Fill out the donation form on our website.</li>
+                <li>Schedule a pickup or drop-off time.</li>
+                <li>Make a difference in someone's life!</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Donation Platform. All rights reserved.</p>
+    </footer>
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+    });
+    </script>
+</body>
+</html>
